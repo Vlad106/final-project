@@ -120,7 +120,10 @@ const dev = gulp.series(build, watch); // Development task with watch mode
 
 // Deploy task
 gulp.task('deploy', function () {
-    return gulp.src('./dist/**/*').pipe(deploy())
+    return gulp.src('./dist/**/*').pipe(deploy({
+        branch: 'gh-pages',
+        message: 'Deploy to GitHub Pages'
+    }))
 });
 
 const deployGithubPages = gulp.series(build, 'deploy');
