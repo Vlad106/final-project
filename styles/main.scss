@@ -1,7 +1,7 @@
 @use 'common' as*;
 
 body {
-  // overflow-x: hidden;
+   overflow-x: hidden;
 }
 
 .gradient {
@@ -181,6 +181,10 @@ header {
 
     @media (max-width: 560px) {
       max-width: 330px;
+    }
+
+    @media (max-width: 375px) {
+      max-width: 210px;
     }
 
     li {
