@@ -295,8 +295,13 @@ header {
     display: flex;
     height: 345px;
     background: #F5F5FA;
-    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+
+    @media (max-width: 1024px) {
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
 
     @media (max-width: 1360px) {
       height: auto;
@@ -312,13 +317,6 @@ header {
 
     .slider__img {
       flex-basis: 400px;
-      border-top-right-radius: 12px;
-      border-bottom-right-radius: 12px;
-
-      @media (max-width: 1024px) {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-      }
     }
 
     .slider-text {
